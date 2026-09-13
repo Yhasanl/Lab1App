@@ -33,5 +33,11 @@ class MainActivity : AppCompatActivity() {
             // Change the text color to RED when clicked
             MyTextView.setTextColor(android.graphics.Color.RED)
         }
+        val ChangeBackgroundButton = findViewById<Button>(R.id.ChangeBackgroundButton)
+
+        ChangeBackgroundButton.setOnClickListener {
+            val mainLayout = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.main)
+            mainLayout.setBackgroundColor(android.graphics.Color.YELLOW)
+        }
     }
 }
