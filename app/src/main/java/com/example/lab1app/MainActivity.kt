@@ -1,6 +1,8 @@
 package com.example.lab1app
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,14 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val MyTextView = findViewById<TextView>(R.id.MyTextView)
+        val ChangeTextButton = findViewById<Button>(R.id.ChangeTextButton)
+
+        // Set click listener for the button
+        ChangeTextButton.setOnClickListener {
+            // Change the text when button is clicked
+            MyTextView.text = "Text has been changed!"
         }
     }
 }
