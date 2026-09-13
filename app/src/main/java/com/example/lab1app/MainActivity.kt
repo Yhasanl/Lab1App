@@ -26,5 +26,12 @@ class MainActivity : AppCompatActivity() {
             // Change the text when button is clicked
             MyTextView.text = "Text has been changed!"
         }
+        val ChangeColorButton = findViewById<Button>(R.id.ChangeColorButton)
+
+        // Set click listener for the second button
+        ChangeColorButton.setOnClickListener {
+            // Change the text color to RED when clicked
+            MyTextView.setTextColor(android.graphics.Color.RED)
+        }
     }
 }
