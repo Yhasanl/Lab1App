@@ -44,7 +44,8 @@
         android:id="@+id/ChangeBackgroundButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
         android:text="Change Background"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="640dp" />
+        app:layout_constraintStart_toStartOf="@+id/ChangeColorButton"
+        app:layout_constraintTop_toBottomOf="@+id/ChangeColorButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
